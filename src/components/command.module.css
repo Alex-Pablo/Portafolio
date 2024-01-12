@@ -1,0 +1,76 @@
+.messagecWrComand{
+    color: var(--txtcolor-moradoLight);
+    font-family: 'SignikaRegular';
+    font-size: 1.2rem;
+    margin: 4vh 0 0 0;
+}
+
+.help{
+    color: var(--txtcolor-white);
+    font-family: 'SignikaSemibold';
+}
+
+
+.container{
+    margin: 2vh 0 0 0;
+}
+
+.wrapperInput{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    width: 500px;
+}
+
+.inputMessage{
+    color: var(--txtcolor-celeste);
+    font-family: 'SignikaSemibold';
+    font-size: 1.1rem;
+}
+
+.input{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    caret-color: var(--txtcolor-moradoLight);
+    border: 10px;
+    color: var(--txtcolor-moradoLight);
+    font-family: 'SignikaSemibold';
+    font-size: 1.2rem;
+}
+
+
+.wrapperResult{
+    margin: 1vh 0 0 0;
+    font-family: 'SignikaSemibold';
+    color: var(--txtcolor-moradoLight);
+    font-size: 1.1rem;
+}
+
+.wrapperHelp{
+    width: 520px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.title{
+    color: var(--textcolor-orange);
+    font-size: 1.2rem;
+    font-family: 'Signikabold';
+}
+
+.ls{
+    color: var(--txtcolor-morado);
+    font-size: 1rem;
+}
+
+.skillsBegin{
+    color: var(--txtcolor-moradoDark);
+    font-size: 1.2rem;
+}
+
+.skill{
+    color: var(--txtcolor-morado);
+}

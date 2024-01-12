@@ -1,95 +1,51 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from "./page.module.css";
+import Command from "@/components/command";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+    <main>
+      <div className={styles.wrapper}>
+        <p className={styles.title}>/alex.pablo</p>
+        <p className={styles.introducedName}>
+          Te doy la bienvenida a mi sencillo hogar, visitante. Me llamo
+          <span className={styles.name}> Alex Pablo</span>
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+        <p className={styles.introducedTech}>
+          ¡Bienvenidos a mi aventura! Soy un estudiante de Ingeniería en
+          Sistemas que se embarcó en el fascinante viaje de la programación en
+          2020. Para mí, la tecnología es mucho más que líneas de código; es la
+          emocionante travesía de convertir cualquier chispa de imaginación en
+          una realidad palpable.
+        </p>
+        <p className={styles.introducedTech}>
+          Cuando no estoy inmerso en el fascinante mundo de la codificación, me
+          aventuro explorando nuestro planeta, capturando recuerdos con cada
+          fotografía que tomo. Además, me sumerjo en la creación de mundos
+          totalmente nuevos a través de apasionantes diseños en 3D.
+        </p>
+
+        <div className={styles.wrapperLinks}>
+          <p className={styles.aventure}>Mis Aventuras</p>
+          <a href="https://platzi.com/p/alexpa1/" className={styles.link} target="_blank">
+            #cursos online /platzi
           </a>
+          <a href="https://twitter.com/AlexP4blo" className={styles.link} target="_blank">
+            #twitter
+          </a>
+          <a href="https://github.com/Alex-Pablo" className={styles.link} target="_blank">
+            #github
+          </a>
+          <a
+            href="https://www.amazon.com/-/es/Daniel-Kahneman/dp/8483068613"
+            className={styles.link}
+            target="_blank"
+          >
+            #libro que estoy leyendo
+          </a>
+
+          <Command></Command>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
-  )
+  );
 }
