@@ -2,17 +2,17 @@
     color: var(--txtcolor-moradoLight);
     font-family: 'SignikaRegular';
     font-size: 1.2rem;
-    margin: 4vh 0 0 0;
+    margin: 5vh 0 0 0;
 }
 
 .help{
     color: var(--txtcolor-white);
-    font-family: 'SignikaSemibold';
+    font-family: 'Signikabold';
 }
 
 
 .container{
-    margin: 2vh 0 0 0;
+    margin: .3vh 0 0 0;
 }
 
 .wrapperInput{
@@ -45,8 +45,8 @@
 .wrapperResult{
     margin: 1vh 0 0 0;
     font-family: 'SignikaSemibold';
-    color: var(--txtcolor-moradoLight);
-    font-size: 1.1rem;
+    background-color: var(---back-cammand);
+    padding: 5px 0 5px 10px;
 }
 
 .wrapperHelp{

@@ -7,8 +7,26 @@
   --txtcolor-red: #f8c3c3;
   --txtcolor-moradoLight: #a39fbb;
   --txtcolor-moradoDark:#705fce77;
-  --textcolor-orange:#c7954a;
+  --textcolor-orange:#f8c06c;
+  --back-ground: #292f44;
+  ---back-cammand: #292f44; 
+	color-scheme: dark;
+} 
+
+:root[data-theme='light'] {
+  --background-color:#D7D6E0;
+  --txtcolor-celeste:#353C56;
+  --txtcolor-white: #847EDA;
+  --txtcolor-morado: #E5E5E5;
+  --txtcolor-gris: #9692d8;
+  --txtcolor-red: #2a4858;
+  --txtcolor-moradoLight: #343b8a;
+  --txtcolor-moradoDark:#705fce77; /*se deja con el mismo color*/
+  --back-ground: #373d4d;
+  ---back-cammand: #988edfcc; 
+  --textcolor-orange:#394080;
 }
+
 
 
 *, *::before, *::after {

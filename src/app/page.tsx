@@ -1,16 +1,24 @@
 import styles from "./page.module.css";
 import Command from "@/components/command";
- 
+import SwitchToggle from "@/components/switch/switchToggle";
 
 export default function Home() {
   return (
     <main>
       <div className={styles.wrapper}>
-        <p className={styles.title}>/alex.pablo</p>
+
+        <div className={styles.containerTitleSwitch}>
+          <div className={styles.wrapperTitle}>
+            <p className={styles.title}>/alex.pablo</p>
+          </div>
+          <SwitchToggle></SwitchToggle>
+        </div>
+
         <p className={styles.introducedName}>
           Te doy la bienvenida a mi sencillo hogar, visitante. Me llamo
           <span className={styles.name}> Alex Pablo</span>
         </p>
+
         <p className={styles.introducedTech}>
           ¡Bienvenidos a mi aventura! Soy un estudiante de Ingeniería en
           Sistemas que se embarcó en el fascinante viaje de la programación en
@@ -27,13 +35,25 @@ export default function Home() {
 
         <div className={styles.wrapperLinks}>
           <p className={styles.aventure}>Mis Aventuras</p>
-          <a href="https://platzi.com/p/alexpa1/" className={styles.link} target="_blank">
+          <a
+            href="https://platzi.com/p/alexpa1/"
+            className={styles.link}
+            target="_blank"
+          >
             #cursos online /platzi
           </a>
-          <a href="https://twitter.com/AlexP4blo" className={styles.link} target="_blank">
+          <a
+            href="https://twitter.com/AlexP4blo"
+            className={styles.link}
+            target="_blank"
+          >
             #twitter
           </a>
-          <a href="https://github.com/Alex-Pablo" className={styles.link} target="_blank">
+          <a
+            href="https://github.com/Alex-Pablo"
+            className={styles.link}
+            target="_blank"
+          >
             #github
           </a>
           <a
