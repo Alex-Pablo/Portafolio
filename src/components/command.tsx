@@ -6,6 +6,9 @@ export default function Command() {
   const [respondStateTerm, setRespondStateTerm] = useState(0);
 
   const handleKeyPress = (event: { key: string }) => {
+    if (respondStateTerm == 1) {
+        setRespondStateTerm(0);   
+    }
     if (event.key === "Enter") {
       switch (commandTerm.trim()) {
         case "help":
@@ -125,15 +128,15 @@ export default function Command() {
           </>
         ) : respondStateTerm == 6 ? (
             // cat trabajos
-            <p>Trbajando en ello</p>
+            <p className={styles.ls}>Trbajando en ello</p>
         ): respondStateTerm == 7 ?(
             // cat experiencia
-            <p>Ganando experiencia ahora</p>
+            <p className={styles.ls}>Ganando experiencia ahora</p>
         ):respondStateTerm == 8 ? (
             // <!-- cat curriculum -->
-            <p>curriculum</p>
+            <p className={styles.ls}>curriculum</p>
         ): respondStateTerm == 1 ?(
-            <p className={styles.ls}>No se reconoce el comando: {commandTerm}</p>
+            <p className={styles.ls} >No se reconoce el comando: {commandTerm}</p>
         ): (
             <p></p>
         )}
