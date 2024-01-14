@@ -27,6 +27,7 @@
     color: var(--txtcolor-celeste);
     font-family: 'SignikaSemibold';
     font-size: 1.1rem;
+    display: inline-block;
 }
 
 .input{
@@ -64,6 +65,7 @@
 .ls{
     color: var(--txtcolor-morado);
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .skillsBegin{

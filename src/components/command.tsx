@@ -2,7 +2,7 @@
 import styles from "./command.module.css";
 import { useState } from "react";
 import { useEffect, useRef } from "react";
-
+import TextAnimation from "@/components/animation/text/textAnimation";
 export default function Command() {
   const [commandTerm, setCommandTerm] = useState("");
   const [respondStateTerm, setRespondStateTerm] = useState(0);
@@ -46,6 +46,7 @@ export default function Command() {
           break;
         case "cat CV":
           setRespondStateTerm(8);
+          openPDF();
           break;
         default:
           setRespondStateTerm(1);
@@ -54,16 +55,25 @@ export default function Command() {
     }
   };
 
+  const openPDF = ()=>{
+      window.open('/cvAlexPablo.pdf')
+  }
+
+  const watchSkill = ()=>{
+    setRespondStateTerm(5);
+  }
+
   return (
     <>
       <p className={styles.messagecWrComand}>
         Escribe <span className={styles.help}>help</span> para tener la lista de
         comandos
       </p>
-
       <div className={styles.container}>
         <div className={styles.wrapperInput}>
-          <p className={styles.inputMessage}>aventuas@alex:~$</p>
+          <p className={styles.inputMessage}>
+            <TextAnimation></TextAnimation>
+          </p>
           <input
             autoFocus
             ref={inputFocus}
@@ -103,8 +113,8 @@ export default function Command() {
           ) : respondStateTerm == 4 ? (
             // commando ls
             <>
-              <p className={styles.ls}>habilidades</p>
-              <p className={styles.ls}>CV</p>
+              <p className={styles.ls} onClick={watchSkill}>habilidades</p>
+              <p className={styles.ls} onClick={openPDF}>CV</p>
               <p className={styles.ls}>trabajos</p>
               <p className={styles.ls}>experiencia</p>
             </>
@@ -153,7 +163,9 @@ export default function Command() {
             <p className={styles.ls}>Ganando experiencia ahora</p>
           ) : respondStateTerm == 8 ? (
             // <!-- cat curriculum -->
-            <p className={styles.ls}>curriculum</p>
+            <>
+              <p className={styles.ls}>curriculum</p>
+            </>
           ) : respondStateTerm == 1 ? (
             <p className={styles.ls}>
               No se reconoce el comando: {commandTerm}

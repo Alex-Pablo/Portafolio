@@ -1,0 +1,26 @@
+.containerTitleSwitch{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .wrapperTitle{
+    display: inline-block
+  }
+  .title{
+    color: var(--txtcolor-celeste);
+    font-family: 'SignikaSemibold';
+    font-size: 1.9rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right:5px solid ;
+    animation: typing 2s steps(11),
+                cursor .4s step-end infinite alternate;
+  }
+  
+  @keyframes cursor{
+    50% { border-color: transparent;}
+  }
+  @keyframes typing {
+    from {width: 0;}
+  }

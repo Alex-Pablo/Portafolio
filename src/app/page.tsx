@@ -1,19 +1,12 @@
 import styles from "./page.module.css";
 import Command from "@/components/command";
-import SwitchToggle from "@/components/switch/switchToggle";
-
+import Link from "next/link";
+import  TitleAnimation from "@/components/animation/text/titleAnimation"
 export default function Home() {
   return (
     <main>
       <div className={styles.wrapper}>
-
-        <div className={styles.containerTitleSwitch}>
-          <div className={styles.wrapperTitle}>
-            <p className={styles.title}>/alex.pablo</p>
-          </div>
-          <SwitchToggle></SwitchToggle>
-        </div>
-
+        <TitleAnimation></TitleAnimation>
         <p className={styles.introducedName}>
           Te doy la bienvenida a mi sencillo hogar, visitante. Me llamo
           <span className={styles.name}> Alex Pablo</span>
@@ -42,6 +35,12 @@ export default function Home() {
           >
             #cursos online /platzi
           </a>
+          <Link
+            href="/resource"
+            className={styles.link}
+          >
+            #recursos utilizados en mi aventura
+          </Link>
           <a
             href="https://twitter.com/AlexP4blo"
             className={styles.link}
