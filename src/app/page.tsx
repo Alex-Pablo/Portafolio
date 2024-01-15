@@ -1,8 +1,13 @@
+"use client"
 import styles from "./page.module.css";
 import Command from "@/components/command";
 import Link from "next/link";
 import  TitleAnimation from "@/components/animation/text/titleAnimation"
 export default function Home() {
+  const openPDF = ()=>{
+    window.open('/diplomasIngles.pdf')
+}
+
   return (
     <main>
       <div className={styles.wrapper}>
@@ -33,8 +38,14 @@ export default function Home() {
             className={styles.link}
             target="_blank"
           >
-            #cursos online /platzi
+            #Mis cursos de programación (platzi)
           </a>
+          <p
+            onClick={openPDF}
+            className={styles.link}
+          >
+            #Mis diplomas de Ingles
+          </p>
           <Link
             href="/resource"
             className={styles.link}

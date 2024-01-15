@@ -48,4 +48,5 @@
   text-decoration: none;
   background:var(--txtcolor-moradoDark);
   display: inline;
+  cursor: pointer;
 }
