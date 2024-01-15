@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background-color:#292f44;
   --txtcolor-celeste:#83e4cd;
@@ -10,12 +14,13 @@
   --textcolor-orange:#f8c06c;
   --back-ground: #292f44;
   ---back-cammand: #292f44; 
+  --backgd-card:#4847528c;
 	color-scheme: dark;
 } 
 
 :root[data-theme='light'] {
   --background-color:#D7D6E0;
-  --txtcolor-celeste:#353C56;
+  --txtcolor-celeste:#272a36;
   --txtcolor-white: #847EDA;
   --txtcolor-morado: #E5E5E5;
   --txtcolor-gris: #9692d8;
@@ -25,6 +30,7 @@
   --back-ground: #373d4d;
   ---back-cammand: #988edfcc; 
   --textcolor-orange:#394080;
+  --backgd-card:#988edfcc;
 }
 
 

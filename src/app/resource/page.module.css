@@ -24,3 +24,35 @@
     font-family: 'SignikaSemibold';
     font-size: 1.1rem;
 }
+
+.wrapperCard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 40px 0 0 0;
+
+}
+
+.card{
+    background:var(--backgd-card);
+    padding: 10px 20px;
+    border-radius: 5%;
+    max-width: 310px;
+}
+.card:hover{
+    transform: scale(1.02);
+    transition: ease 0.5s ;
+}
+
+.description{
+    font-size: 0.8rem;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.767);
+    font-weight: 500;
+}
+
+.title{
+    color: var(--txtcolor-celeste);
+    font-size: 1rem;
+}
