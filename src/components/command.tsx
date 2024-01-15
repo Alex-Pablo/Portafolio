@@ -38,7 +38,7 @@ export default function Command() {
         case "cat habilidades":
           setRespondStateTerm(5);
           break;
-        case "cat trabajos":
+        case "cat proyectos":
           setRespondStateTerm(6);
           break;
         case "cat experiencia":
@@ -102,7 +102,7 @@ export default function Command() {
               </div>
               <div className={styles.wrapperHelp}>
                 <p className={styles.title}>email</p>
-                <p className={styles.ls}>ver correo electronico.</p>
+                <p className={styles.ls}>ver correo mi electronico.</p>
               </div>
             </>
           ) : respondStateTerm == 3 ? (
@@ -115,7 +115,7 @@ export default function Command() {
             <>
               <p className={styles.ls} onClick={watchSkill}>habilidades</p>
               <p className={styles.ls} onClick={openPDF}>CV</p>
-              <p className={styles.ls}>trabajos</p>
+              <p className={styles.ls}>proyectos</p>
               <p className={styles.ls}>experiencia</p>
             </>
           ) : respondStateTerm == 5 ? (
@@ -156,8 +156,8 @@ export default function Command() {
               </p>
             </>
           ) : respondStateTerm == 6 ? (
-            // cat trabajos
-            <p className={styles.ls}>Trbajando en ello</p>
+            // cat proyectos
+            <p className={styles.ls}>pronto estara disponible</p>
           ) : respondStateTerm == 7 ? (
             // cat experiencia
             <p className={styles.ls}>Ganando experiencia ahora</p>
